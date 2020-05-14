@@ -1,0 +1,32 @@
+[global_config]
+  geometry_hinting = True
+  window_state = maximise
+  borderless = True
+  title_hide_sizetext = True
+  title_transmit_fg_color = "#0abdc6"
+  title_transmit_bg_color = "#091833"
+  title_receive_fg_color = "#0abdc6"
+  title_receive_bg_color = "#091833"
+  title_inactive_fg_color = "#0abdc6"
+  title_inactive_bg_color = "#091833"
+  enabled_plugins = ,
+  title_use_system_font = False
+  title_font = Sans 7
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#000b1e"
+    background_darkness = 0.28
+    cursor_color = "#0abdc6"
+    foreground_color = "#0abdc6"
+    scrollback_infinite = True
+    palette = "#123e7c:#cc0000:#711c91:#f57800:#123e7c:#d300c4:#08bbc6:#d7d7d5:#1c60c2:#cc0000:#711c91:#f57800:#00ff00:#d300c4:#08bbc6:#d7d7d5"
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

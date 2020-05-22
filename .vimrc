@@ -3,7 +3,12 @@ filetype plugin on
 
 set number
 syntax on
-colorscheme cyberpunkneon
+colorscheme neonlight
+
+" Wrap text at 80 column.
+" set textwidth=80
+" Color 81 column
+call matchadd('ColorColumn', '\%81v', 100)
 
 " Remove newbie crutches in Command Mode
 cnoremap <Down> <Nop>
@@ -55,8 +60,9 @@ set smarttab            " Indent to the next tabstop.
 set autoindent
 set smartindent
 
-" Wrap text at 80 column.
-set textwidth=80
+" Show shady characters.
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set list
 
 " Beancount
 autocmd FileType beancount nnoremap <buffer> <C-A> :AlignCommodity<CR> 

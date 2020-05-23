@@ -5,11 +5,6 @@ set number
 syntax on
 colorscheme neonlight
 
-" Wrap text at 80 column.
-" set textwidth=80
-" Color 81 column
-call matchadd('ColorColumn', '\%81v', 100)
-
 " Remove newbie crutches in Command Mode
 cnoremap <Down> <Nop>
 cnoremap <Left> <Nop>
@@ -34,11 +29,20 @@ vnoremap <Left> <Nop>
 vnoremap <Right> <Nop>
 vnoremap <Up> <Nop>
 
+" Wrap text at 80 column.
+" set textwidth=80
+" Color 81 column
+call matchadd('ColorColumn', '\%81v', 100)
+
+" Show shady characters.
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set list
+
 set wildmenu
 set wildmode=full
 
 " Use actual tab chars in Makefiles.
-autocmd FileType make set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
+autocmd FileType make set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
 
 " Set 2 spaces in HTML files.
 autocmd FileType html set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
@@ -59,10 +63,6 @@ set smarttab            " Indent to the next tabstop.
 
 set autoindent
 set smartindent
-
-" Show shady characters.
-exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
-set list
 
 " Beancount
 autocmd FileType beancount nnoremap <buffer> <C-A> :AlignCommodity<CR>

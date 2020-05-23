@@ -51,6 +51,8 @@ autocmd FileType javascript set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
 autocmd FileType vue set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
 autocmd FileType tex set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
 
+autocmd FileType tex set textwidth=80
+
 " For everything else, use a tab width of 4 space chars.
 set tabstop=4           " The width of a TAB is set to 4.
                         " Still it is a \t. It is just that

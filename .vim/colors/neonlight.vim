@@ -29,8 +29,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi ErrorMsg ctermbg=2 cterm=bold
     hi Todo ctermbg=19 ctermfg=245 cterm=bold
     hi MatchParen ctermbg=55 ctermfg=15
-    hi SpecialKey ctermfg=21
-    hi EndOfBuffer ctermfg=21
+    hi SpecialKey ctermfg=226
+    hi EndOfBuffer ctermfg=226
     hi ColorColumn ctermbg=3 ctermfg=7
     hi DiffAdd ctermbg=12
 

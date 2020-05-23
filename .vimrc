@@ -65,7 +65,7 @@ exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 set list
 
 " Beancount
-autocmd FileType beancount nnoremap <buffer> <C-A> :AlignCommodity<CR> 
+autocmd FileType beancount nnoremap <buffer> <C-A> :AlignCommodity<CR>
 autocmd FileType beancount inoremap . .<C-\><C-O>:AlignCommodity<CR>
 autocmd FileType beancount let g:beancount_separator_col=74
 

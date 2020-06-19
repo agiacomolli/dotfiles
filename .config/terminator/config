@@ -15,12 +15,10 @@
 [keybindings]
 [profiles]
   [[default]]
-    background_color = "#000b1e"
     background_darkness = 0.28
     cursor_color = "#0abdc6"
-    foreground_color = "#0abdc6"
     scrollback_infinite = True
-    palette = "#123e7c:#cc0000:#711c91:#f57800:#123e7c:#d300c4:#08bbc6:#d7d7d5:#1c60c2:#cc0000:#711c91:#f57800:#00ff00:#d300c4:#08bbc6:#d7d7d5"
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
 [layouts]
   [[default]]
     [[[window0]]]

@@ -45,7 +45,6 @@ set wildmode=full
 " Use actual tab chars in Makefiles.
 autocmd FileType make set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
 
-" Set 2 spaces in HTML files.
 autocmd FileType html set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
 autocmd FileType typescript set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
 autocmd FileType javascript set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
@@ -53,6 +52,8 @@ autocmd FileType vue set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
 autocmd FileType tex set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
 
 autocmd FileType tex set textwidth=80
+
+autocmd FileType go set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 " For everything else, use a tab width of 4 space chars.
 set tabstop=4           " The width of a TAB is set to 4.

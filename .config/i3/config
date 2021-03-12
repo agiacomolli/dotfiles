@@ -109,14 +109,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 
 # Move workspace to left output
-bindsym $mod+Ctrl+1 move workspace to output left
-bindsym $mod+Ctrl+2 move workspace to output left
-bindsym $mod+Ctrl+3 move workspace to output left
-bindsym $mod+Ctrl+4 move workspace to output left
-bindsym $mod+Ctrl+6 move workspace to output left
-bindsym $mod+Ctrl+7 move workspace to output left
-bindsym $mod+Ctrl+8 move workspace to output left
-bindsym $mod+Ctrl+9 move workspace to output left
+bindsym $mod+Ctrl+space move workspace to output left
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

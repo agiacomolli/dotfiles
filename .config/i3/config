@@ -154,9 +154,10 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightnes
 bar {
     position top
     status_command i3status
+    separator_symbol "|"
 
     colors {
-        background          #160f30
+        background          #43485c
     }
 
     #status_command exec ~/mybar

@@ -157,7 +157,7 @@ bar {
     separator_symbol "|"
 
     colors {
-        background          #43485c
+        background          #121e34
     }
 
     #status_command exec ~/mybar
@@ -208,3 +208,11 @@ mode "moveit" {
 }
 bindsym $mod+m focus floating; mode "moveit"
 
+for_window [instance="Godot_Engine"] floating enable
+for_window [instance="Godot_Editor"] floating disable
+for_window [instance="ressonare-residencial"] floating enable
+for_window [instance="ressonare-scada"] floating enable
+#for_window [instance="ressonare-bms"] floating enable
+for_window [instance="ressonare-tarifacao-app"] floating enable
+
+for_window [instance="ressonare-hvac-control"] floating enable

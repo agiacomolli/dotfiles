@@ -1,12 +1,12 @@
 set $mod Mod4
 
-font pango:System San Francisco Display 8
+font pango:Ubuntu Mono Regular 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminator -b -m
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -160,7 +160,7 @@ bar {
         background          #121e34
     }
 
-    #status_command exec ~/mybar
+    #status_command exec ~/.local/bin/statusbar
     #status_command /home/agiacomolli/go/src/i3bar/i3bar
     #font pango:DejaVu Sans Mono 10
     #position top
@@ -174,12 +174,12 @@ bindsym Print exec gnome-screenshot -i
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (p) shutdown
 mode "$mode_system" {
-        bindsym l exec --no-startup-id i3lock -c 091833, mode "default"
-        bindsym e exec --no-startup-id i3-msg exit, mode "default"
-        bindsym s exec --no-startup-id i3lock -c 091833 && systemctl suspend, mode "default"
-        bindsym h exec --no-startup-id i3lock -c 091833 && systemctl hibernate, mode "default"
-        bindsym r exec --no-startup-id systemctl reboot, mode "default"
-        bindsym p exec --no-startup-id systemctl poweroff, mode "default"
+        bindsym --release l exec --no-startup-id slock, mode "default"
+        bindsym --release e exec --no-startup-id i3-msg exit, mode "default"
+        bindsym --release s exec --no-startup-id systemctl suspend-then-hibernate, mode "default"
+        bindsym --release h exec --no-startup-id systemctl hibernate, mode "default"
+        bindsym --release r exec --no-startup-id systemctl reboot, mode "default"
+        bindsym --release p exec --no-startup-id systemctl poweroff, mode "default"
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -189,9 +189,9 @@ bindsym $mod+Control+l mode "$mode_system"
 
 set $mode_screen Only laptop (o), Right side (r), Left side (l)
 mode "$mode_screen" {
-        bindsym o exec --no-startup-id /home/agiacomolli/.screenlayout/only-laptop.sh, mode "default"
-        bindsym r exec --no-startup-id /home/agiacomolli/.screenlayout/right-side.sh, mode "default"
-        bindsym l exec --no-startup-id /home/agiacomolli/.screenlayout/left-side.sh, mode "default"
+        bindsym o exec --no-startup-id ~/.local/bin/only-laptop.sh, mode "default"
+        bindsym r exec --no-startup-id ~/.local/bin/right-side.sh, mode "default"
+        bindsym l exec --no-startup-id ~/.local/bin/left-side.sh, mode "default"
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"

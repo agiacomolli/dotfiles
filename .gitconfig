@@ -2,5 +2,9 @@
 	name = Anderson A. Giacomolli
 	email = agiacomolli@gmail.com
 	signingkey = 06C2DFB1842615BF4A9DEF031634963456E9E4E7
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
 [core]
 	editor = vim

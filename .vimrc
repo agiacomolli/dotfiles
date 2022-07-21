@@ -53,7 +53,7 @@ autocmd FileType tex set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
 
 autocmd FileType tex set textwidth=80
 
-autocmd FileType go set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType go set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
 
 " For everything else, use a tab width of 4 space chars.
 set tabstop=4           " The width of a TAB is set to 4.

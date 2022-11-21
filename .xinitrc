@@ -24,14 +24,15 @@ if [ -f "$usermodmap" ]; then
 fi
 
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
- for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
-  [ -x "$f" ] && . "$f"
- done
- unset f
+    for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+        [ -x "$f" ] && . "$f"
+    done
+    unset f
 fi
 
 picom -f -b
-~/.fehbg
+
+setxkbmap -model abnt2 -layout br -variant abnt2
 
 exec i3
 

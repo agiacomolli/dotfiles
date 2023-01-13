@@ -1,6 +1,7 @@
 set nocompatible
 filetype plugin on
 
+set ruler
 set number
 syntax on
 colorscheme neonlight

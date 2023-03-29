@@ -43,6 +43,10 @@ set list
 set wildmenu
 set wildmode=full
 
+" Per default, netrw leaves unmodified buffers open. This deletes buffers once
+" it's hidden.
+autocmd FileType netrw setl bufhidden=delete
+
 " Use actual tab chars in Makefiles.
 autocmd FileType make set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
 

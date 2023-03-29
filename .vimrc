@@ -1,6 +1,9 @@
 set nocompatible
 filetype plugin on
 
+" Search all subdirectories and recursively
+set path+=**
+
 set ruler
 set number
 syntax on

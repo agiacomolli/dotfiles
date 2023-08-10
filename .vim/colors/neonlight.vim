@@ -9,6 +9,8 @@ let colors_name = "neonlight"
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Normal ctermfg=246 cterm=NONE
 
+    hi Pmenu ctermbg=236 ctermfg=245
+    hi PmenuSel ctermbg=55 ctermfg=245 cterm=bold
     hi Comment ctermfg=240
     hi Keyword ctermfg=250 cterm=bold
     hi Identifier ctermfg=250 cterm=bold

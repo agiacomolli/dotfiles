@@ -48,24 +48,6 @@ load {
     format = "LOAD: %1min %5min %15min"
 }
 
-read_file "BTC" {
-    path = "/tmp/cripto/BTCUSDT"
-    format = "%title %content"
-    format_bad = ""
-}
-
-read_file "DOGE" {
-    path = "/tmp/cripto/DOGEUSDT"
-    format = "%title %content"
-    format_bad = ""
-}
-
-read_file "LTC" {
-    path = "/tmp/cripto/LTCUSDT"
-    format = "%title %content"
-    format_bad = ""
-}
-
 wireless _first_ {
     format_up = "WLAN: %ip (%essid) %quality"
     format_down = "WLAN: down"

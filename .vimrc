@@ -7,7 +7,7 @@ set path+=**
 set ruler
 set number
 syntax on
-colorscheme neonlight
+colorscheme default
 
 " Remove newbie crutches in Command Mode
 cnoremap <Down> <Nop>

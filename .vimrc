@@ -50,19 +50,11 @@ set wildmode=full
 " it's hidden.
 autocmd FileType netrw setl bufhidden=delete
 
-" Use actual tab chars in Makefiles.
 autocmd FileType make set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
-
 autocmd FileType html set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
-autocmd FileType typescript set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
-autocmd FileType javascript set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
-autocmd FileType vue set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
-autocmd FileType tex set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
-
-autocmd FileType tex set textwidth=80
-
-autocmd FileType go set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
-autocmd FileType sh set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
+autocmd FileType tex  set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
+autocmd FileType go   set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
+autocmd FileType sh   set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
 autocmd FileType bash set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
 
 " For everything else, use a tab width of 4 space chars.
@@ -77,9 +69,4 @@ set smarttab            " Indent to the next tabstop.
 
 set autoindent
 set smartindent
-
-" Beancount
-autocmd FileType beancount nnoremap <buffer> <C-A> :AlignCommodity<CR>
-autocmd FileType beancount inoremap . .<C-\><C-O>:AlignCommodity<CR>
-autocmd FileType beancount let g:beancount_separator_col=74
 

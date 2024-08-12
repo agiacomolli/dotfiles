@@ -34,7 +34,7 @@ vnoremap <Right> <Nop>
 vnoremap <Up> <Nop>
 
 " Wrap text at 80 column.
-" set textwidth=80
+set textwidth=80
 
 " Color 81 column
 call matchadd('ColorColumn', '\%81v.', 100)

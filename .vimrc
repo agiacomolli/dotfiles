@@ -36,8 +36,8 @@ vnoremap <Up> <Nop>
 " Wrap text at 80 column.
 set textwidth=80
 
-" Color 81 column
-call matchadd('ColorColumn', '\%81v.', 100)
+" Color 101 column
+call matchadd('ColorColumn', '\%101v.', 120)
 
 " Show shady characters.
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"

@@ -1,9 +1,9 @@
 [user]
 	name = Anderson A. Giacomolli
 	email = agiacomolli@gmail.com
-	signingkey = 06C2DFB1842615BF4A9DEF031634963456E9E4E7
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDMTwxPFiBzxP472jFoUHq/naxgP17Q9QPhYO7Sg9DQR agiacomolli@gmail.com
 [gpg]
-	program = gpg
+	format = ssh
 [commit]
 	gpgsign = true
 [core]

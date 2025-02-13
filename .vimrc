@@ -54,7 +54,7 @@ autocmd FileType make set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolis
 autocmd FileType html set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
 autocmd FileType tex  set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
 autocmd FileType go   set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
-autocmd FileType rst   set tabstop=2 shiftwidth=2 softtabstop=0 noexpandtab nolist
+autocmd FileType rst  set shiftwidth=2 softtabstop=2
 autocmd FileType sh   set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
 autocmd FileType bash set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
 autocmd FileType cpp  set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist

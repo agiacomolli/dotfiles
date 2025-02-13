@@ -13,3 +13,5 @@
 	insteadOf = https://github.com/
 [pull]
 	rebase = false
+#[gpg "ssh"]
+	#allowedSignersFile = /Users/agiacomolli/.ssh/allowed_signers

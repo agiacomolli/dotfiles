@@ -58,6 +58,7 @@ autocmd FileType rst  set shiftwidth=2 softtabstop=2
 autocmd FileType sh   set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
 autocmd FileType bash set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
 autocmd FileType cpp  set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab nolist
+autocmd FileType nix  set tabstop=2 shiftwidth=2 softtabstop=0 expandtab
 
 " For everything else, use a tab width of 4 space chars.
 set tabstop=4           " The width of a TAB is set to 4.

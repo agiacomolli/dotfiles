@@ -5,3 +5,5 @@ export GREP_OPTIONS="--color=auto"
 
 autoload -Uz compinit && compinit
 
+eval "$(direnv hook zsh)"
+

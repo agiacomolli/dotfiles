@@ -21,6 +21,8 @@ inoremap <Left> <Nop>
 inoremap <Right> <Nop>
 inoremap <Up> <Nop>
 
+set gp=git\ grep\ -n
+
 " Wrap text at 80 column.
 set textwidth=80
 
